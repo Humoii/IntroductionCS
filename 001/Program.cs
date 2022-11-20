@@ -3,7 +3,7 @@
 int a;// 32 бит
 a = 10;
 System.Console.Write("Введите число: ");
-string? s = Console.ReadLine();
+string? s = Console.ReadLine(); // string? возвращаемое значение строки
 a = Convert.ToInt32(s);
 int b = a*a;
 System.Console.WriteLine(a+"^2 = "+b); // "a" склеиваеться спомощью "+" и пишеться строка "^2 = " склеиваем "+" с "b"
