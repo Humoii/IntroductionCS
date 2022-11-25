@@ -33,10 +33,8 @@ else if (a==7)
 //через массив
 string[] DaysOfTheWeek = {"NO", "Понедельник", "Вторник", "Среда", "Четверг",
                             "Пятница", "Суббота", "Воскресение"};
-int n = Convert.ToInt32(Console.ReadLine());
-int index = n;
-    if(index <= n)
-    {
+System.Console.Write("Введите день недели: ");
+int index = Convert.ToInt32(Console.ReadLine());
     System.Console.WriteLine(DaysOfTheWeek[index]);
-    }
+    
    
