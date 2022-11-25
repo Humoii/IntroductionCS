@@ -9,7 +9,7 @@ int o=(int)x; // явное привидение типов
 */
 bool Test(int a)
 {
-    //if (a%2==0) return true; return false;
+   // if (a%2==0) return true; return false;
     return a % 2 == 0;
 }
 
@@ -17,7 +17,7 @@ Random random = new Random();
 for (int i = 0; i < 10; i++)
 {
     int a = random.Next(1, 100);
-    int b = (int)Math.Pow(a, 3);
+    int b = (int)Math.Pow(a, 3); //Pow -возводит число в указанную степень
     if (Test(b))
         System.Console.WriteLine($"{a}, {b}");
 }
