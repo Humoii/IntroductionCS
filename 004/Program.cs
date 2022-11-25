@@ -1,5 +1,5 @@
 ﻿// 4. По заданному с клавиатуры номеру дня недели вывести его название
-
+/* Много строк
 int a= Convert.ToInt32(Console.ReadLine());
 if (a==1)
 {
@@ -29,3 +29,14 @@ else if (a==7)
 {
     System.Console.WriteLine("Воскресение");
 }
+*/
+//через массив
+string[] DaysOfTheWeek = {"NO", "Понедельник", "Вторник", "Среда", "Четверг",
+                            "Пятница", "Суббота", "Воскресение"};
+int n = Convert.ToInt32(Console.ReadLine());
+int index = n;
+    if(index <= n)
+    {
+    System.Console.WriteLine(DaysOfTheWeek[index]);
+    }
+   
