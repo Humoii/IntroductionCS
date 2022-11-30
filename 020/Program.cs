@@ -1,19 +1,10 @@
-﻿//20. Определить номер четверти плоскости, в которой находится точка с координатами Х и У, 
-//причем X ≠ 0 и Y ≠ 0
-
-// тип имя(аргумент)
-int Part(double x, double y)
-{
-    //тело подпрограммы
-    
-    if (x > 0 && y > 0) return 1;
-    if (x < 0 && y > 0) return 2;
-    if (x < 0 && y < 0) return 3;
-    if (x > 0 && y < 0) return 4;
-
-    return 0;
-}
-
-double x = Convert.ToInt32(Console.ReadLine());
-double y = Convert.ToInt32(Console.ReadLine());
-System.Console.WriteLine("Part:" + Part(x, y));
+﻿// 20. Дано число. Проверить кратно ли оно 7 и 23
+/* 1 Вариант
+ int n=Convert.ToInt32(Console.ReadLine());
+ if (n%7==0 && n%23==0)System.Console.WriteLine("Yes"); else System.Console.WriteLine("No");
+*/
+// 2 Вариант
+int n=Convert.ToInt32(Console.ReadLine());
+bool d1=n%7==0;
+bool d2=n%23==0;
+if (d1 && d2)System.Console.WriteLine("Yes"); else System.Console.WriteLine("No");

@@ -1,10 +1,8 @@
-﻿// 23. Найти расстояние между точками в пространстве 2D
+﻿// 23.Проверить истинность утверждения ¬(X ⋁ Y) = ¬X ⋀ ¬Y : ¬ -! отрицание  ⋁ -||или ⋀ -&& и (перемножение)
+//!(X || Y)==!X && !Y
 
-double x1,y1,x2,y2,distance;
-x1=Convert.ToDouble(Console.ReadLine());
-y1=Convert.ToDouble(Console.ReadLine());
-x2=Convert.ToDouble(Console.ReadLine());
-y2=Convert.ToDouble(Console.ReadLine());
-
-distance=Math.Sqrt((x2-x1)*(x2-x1)+Math.Pow(y2-y1,2));
-System.Console.WriteLine(distance);
+System.Console.WriteLine("X Y !(X | Y)==!X & !Y");
+System.Console.WriteLine($"0 0 {Convert.ToInt32(!(false || false)),5}{Convert.ToInt32(!false && !false),9}");
+System.Console.WriteLine($"0 1 {Convert.ToInt32(!(false || true)),5}{Convert.ToInt32(!false && !true),9}");
+System.Console.WriteLine($"1 0 {Convert.ToInt32(!(true || false)),5}{Convert.ToInt32(!true && !false),9}");
+System.Console.WriteLine($"1 1 {Convert.ToInt32(!(true || true)),5}{Convert.ToInt32(!true && !true),9}");
