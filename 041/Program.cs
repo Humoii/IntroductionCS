@@ -1,14 +1,13 @@
 ﻿// 41. В Указанном массиве вещественных чисел найдите разницу между
 //  максимальным и минимальным элементом
 
-double[] RandomIntArray(int size = 10, double min = 0, double max = 100)
+double[] RandomIntArray(int size = 10)
 {
     double[] array = new double[size];
     Random random = new Random();
 
     for (int index = 0; index < size; index++)
         array[index] = random.NextDouble();
-    Console.Write(" {0:F2} ", random.NextDouble());
     return array;
 }
 
@@ -31,9 +30,9 @@ double Min(double[] array)
 void Print(double[] array)
 {
     for (int index = 0; index < array.Length; index++)
-        System.Console.Write($"{array[index],5}");
+        System.Console.Write($"{array[index],5:F2}");
 }
-double[] a = RandomIntArray(2,0.0,0.2);
+double[] a = RandomIntArray(2);
 Print(a);
 System.Console.WriteLine();
-System.Console.WriteLine(Max(a) - Min(a));
+System.Console.WriteLine($"{Max(a) - Min(a),5:F2}");
