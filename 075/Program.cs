@@ -1,14 +1,13 @@
 ﻿// 75. Написать программу вычисления функции Аккермана
 
-int A(int n, int m)
+int ack(int n, int m)
 {
-  if (n == 0)
-    return m + 1;
-  else
-    if ((n != 0) && (m == 0))
-      return A(n - 1, 1);
+    if (n == 0)
+        return m + 1;
     else
-      return A(n - 1, A(n, m - 1));
+    if (m == 0)
+        return ack(n - 1, 1);
+        else
+        return ack(n - 1, ack(n, m - 1));
 }
-
-System.Console.WriteLine(A(2,2));
+System.Console.WriteLine(ack(1, 2));
