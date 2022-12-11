@@ -2,8 +2,9 @@
 // для которых каждое следующее равно сумме двух предыдущих.
 //  Первые два элемента последовательности 0 и 1 
 
-void Fibonachi(int N, int M = 0, int i = 1)
+void Fibonachi(int N, int M = 0,int i = 1)
 {
+    
     if (N  > 0)
     {
         System.Console.Write($"{M,5}");
