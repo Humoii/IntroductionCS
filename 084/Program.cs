@@ -13,15 +13,15 @@ int SumDigit(int N)
 }
 
 string s = Console.ReadLine()!;
-bool a = s.All(char.IsDigit);
-int d = 0;
+bool a = s.All(char.IsDigit);//можно через TryParse(s,out d)
+int d;
 if (a == true)
 {
     d = Convert.ToInt32(s);
     System.Console.WriteLine(a);
     System.Console.WriteLine(SumDigit(d));
 }
-if (a == false)
+else
 {
     System.Console.WriteLine(a);
 }
